@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
 
+		<link rel="stylesheet" href="style.css">
+
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -18,6 +20,30 @@
 			<div class="slides">
 				<section data-background-image="assets/Leeds_dall_alto.jpg" data-background-opacity="0.4">
 					<h1>Leeds</h1>
+				</section>
+				<section>
+					<iframe width="650" height="650" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.5048828125000004%2C53.15665305315798%2C-0.5603027343750001%2C54.52905134493475&amp;layer=mapnik&amp;marker=53.84847611862496%2C-1.5325927734375"></iframe>
+				</section>
+				<section>
+					<h1>Where is Leeds?</h1>
+					<ul>
+						<li class="fragment">It's the capital of the metropolitan county of West Yorkshire (in North England), with 213 square miles and 784000 inhabitants</li>
+						<br>
+						<li class="fragment">It's the third biggest city of the Great Britain (first and second biggest cities are London and Birmingham)</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Landmarks</h1>
+					<div class="r-stack">
+						<div class="fragment fade-out" data-fragment-index="0">
+							<figcaption><h6 class="landmarkcap">Leeds Castle</h6></figcaption>
+							<figure><img src="assets/Leeds_Castle_2004_7.jpg" width="" height="475">
+							
+						</figure>
+						</div>
+						<img class="fragment current-visible" data-fragment-index="0" src="assets/RochesterCastle.JPG" width="" height="550">
+						<img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+					  </div>
 				</section>
 			</div>
 		</div>
@@ -32,6 +58,8 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+
+				center: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
